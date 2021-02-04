@@ -1,0 +1,34 @@
+<!-- if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+} -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Enter Number: <input type="text" id="myText1" onchange="myFunction()">
+<button onclick="add()">Check</button><br><br>
+<p id="b"></p>
+<script>
+function myFunction() {
+   var a = document.getElementById("myText1").value;
+   var t = parseInt(a)%3;
+   var s = parseInt(a)%7;
+   if (t == 0 || s==0) {
+   	
+  alert(" Entered number is a multiple of 3 or 7")
+  }
+else
+{
+	alert(" Entered number is not a multiple of 3 or 7")
+}
+}
+
+</script>
+</body>
+</html>
